@@ -41,7 +41,10 @@ def add(tagname,time_frame):
 			negative+=1
 		else:	
 				neutral+=1
+
 	s=positive+negative+neutral
+	if s=0:
+		s+=1
 	positive=(positive/s)*100
 	negative=(negative/s)*100
 	neutral=(neutral/s)*100	 
